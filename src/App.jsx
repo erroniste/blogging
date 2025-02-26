@@ -11,7 +11,7 @@ function App() {
 
   return (
     <div className="blog-container">
-
+      <Header />
       <main className="blog-content">
        <Hero />
         <BlogList />
