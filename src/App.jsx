@@ -1,34 +1,48 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
+//import Header from './components/Header'
+import Hero from './components/Hero'
+//import BlogList from './components/BlogList'
+//import Footer from './components/Footer'
 import './App.css'
 
 function App() {
-  const [count, setCount] = useState(0)
+  // Static blog data
+  const blogPosts = [
+    {
+      id: 1,
+      title: "Getting Started with React",
+      excerpt: "Learn the basics of React and how to create your first component...",
+      date: "2024-02-26",
+      author: "Mouad",
+      category: "Programming"
+    },
+    {
+      id: 2,
+      title: "Web Development Best Practices",
+      excerpt: "Discover the essential practices for modern web development...",
+      date: "2024-02-25",
+      author: "Mouad",
+      category: "Development"
+    },
+    {
+      id: 3,
+      title: "Understanding JavaScript Promises",
+      excerpt: "A deep dive into asynchronous programming with JavaScript...",
+      date: "2024-02-24",
+      author: "Mouad",
+      category: "JavaScript"
+    }
+  ]
 
   return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + mouad</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
+    <div className="blog-container">
+      {/* <Header /> */}
+      <main className="blog-content">
+        <Hero />
+        {/* <BlogList posts={blogPosts} /> */}
+      </main>
+      {/* <Footer /> */}
+    </div>
   )
 }
 
