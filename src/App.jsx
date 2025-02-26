@@ -1,5 +1,5 @@
 import { useState } from 'react'
-//import Header from './components/Header'
+import Header from './components/Header'
 import Hero from './components/Hero'
 import BlogList from './components/blog-list/BlogList'
 //import Footer from './components/Footer'
@@ -10,7 +10,7 @@ function App() {
 
   return (
     <div className="blog-container">
-      {/* <Header /> */}
+      <Header />
       <main className="blog-content">
        {/* <Hero /> */}
         <BlogList />
