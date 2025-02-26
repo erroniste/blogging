@@ -3,7 +3,7 @@ import ContactUsForm from './components/ContactUsForm'
 import Hero from './components/Hero'
 import BlogList from './components/blog-list/BlogList'
 import Footer from './components/Footer'
-
+import Header from './components/Header'
 import './App.css'
 
 function App() {
