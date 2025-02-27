@@ -1,127 +1,134 @@
 /* General Reset */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  /* Hero Section */
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Hero Section */
+.hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%; /* Full width */
+  background-color: #d8d8d8; /* Gray background */
+  color: #000; /* Text color */
+  text-align: center;
+  position: relative;
+}
+
+/* Content inside hero */
+.hero .content {
+  width: 100%;
+  padding: 40px 20px;
+  z-index: 2;
+}
+
+/* Title */
+.hero h1 {
+  font-size: 60px; /* Larger title */
+  font-weight: 700;
+  margin-bottom: 20px;
+  transition: all 0.3s ease;
+  text-align: center; /* Center title */
+  padding-top: 40px;
+}
+
+/* Blog Post Form */
+.post-form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 700px;
+  padding: 1.5rem;
+  margin: 1rem auto;
+  border-radius: 8px;
+  font-size: 1rem;
+  background-color: #ffffff;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.post-form label {
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.post-form input,
+.post-form textarea {
+  width: 100%;
+  padding: 12px;
+  margin-top: 5px;
+  border-radius: 5px;
+  background: #ffffff;
+  color: #000;
+}
+
+.post-form textarea {
+  height: 120px;
+  resize: none;
+}
+
+/* Upload Button */
+
+.upload-button {
+  position: relative;
+  margin-top: 10px; /* Space above the upload button */
+  overflow: hidden; /* Ensure that the sliding effect is contained */
+}
+
+.upload-button input[type="file"] {
+  display: none; /* Hide the default file input */
+}
+
+.custom-upload {
+  display: inline-block;
+  background-color: #3b82f6; /* Button color */
+  color: white;
+  padding: 12px 20px; /* Padding for the button */
+  border-radius: 5px; /* Rounded corners */
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease, transform 0.3s ease; /* Transition effect for sliding */
+  text-align: center; /* Center text */
+}
+
+/* Sliding effect */
+.custom-upload.sliding {
+  transform: translateX(-10px); /* Move the button left */
+}
+
+.custom-upload:hover {
+  background-color: #2563eb; /* Darker shade on hover */
+}
+
+.submit-btn {
+  width: 100%;
+  background-color: #3b82f6; /* Button color */
+  color: white;
+  border: none;
+  padding: 14px; /* Increased padding for button */
+  font-size: 16px;
+  margin-top: 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease; /* Transition effect */
+}
+
+.submit-btn:hover {
+  background-color: #2563eb; /* Darker shade on hover */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
   .hero {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh; /* Full screen height */
-    width: 100%; /* Full width */
-    background: url('your-background-image.jpg') no-repeat center center/cover; /* Background image */
-    background-size: cover; /* Ensures the image covers the whole area */
-    background-position: center;
-    color: #fff;
-    text-align: center;
-    position: relative;
-    padding: 0;
-    margin: 0;
-    left: 0;
-    top: 0;
-    overflow: hidden;
-    transition: all 0.3s ease;
+    padding: 50px 20px;
   }
-  
-  /* Add a black overlay without gradient */
-  .hero::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 1; /* Makes sure overlay is under the text */
-    transition: all 0.3s ease;
-  }
-  
-  /* Content inside hero */
-  .hero .content {
-    width: 100%;
-    max-width: 1200px; /* Increased max-width for a wider content area */
-    padding: 40px 20px;
-    z-index: 2;
-    background-color: rgb(0, 0, 0); /* Slight background behind content to increase contrast */
-    border-radius: 15px; /* Rounded corners for content */
-    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
-    transition: all 0.3s ease;
-  }
-  
-  /* Title */
+
   .hero h1 {
-    font-size: 60px; /* Larger title */
-    font-weight: 700;
-    text-transform: uppercase;
-    letter-spacing: 3px;
-    color: #fff;
-    margin-bottom: 20px;
-    transition: all 0.3s ease;
+    font-size: 36px; /* Smaller title on mobile */
   }
-  
-  .hero h1:hover {
-    color: #ff5e57; /* Hover effect */
-    letter-spacing: 5px; /* Increase letter-spacing on hover */
+
+  .post-form {
+    margin: 10px auto; /* Adjust form margin on mobile */
   }
-  
-  /* Subtitle text */
-  .hero p {
-    font-size: 22px;
-    font-weight: 300;
-    color: #e0e0e0;
-    line-height: 1.6;
-    margin-bottom: 30px;
-    max-width: 900px; /* Limit text width for better legibility */
-    margin-left: auto;
-    margin-right: auto;
-    transition: all 0.3s ease;
-  }
-  
-  .hero p:hover {
-    color: #ff5e57; /* Hover effect for the paragraph */
-    font-size: 24px; /* Slightly increase the font size on hover */
-  }
-  
-  /* Button styling */
-  .hero .button {
-    background-color: #ff5e57;
-    color: #fff;
-    padding: 12px 40px;
-    font-size: 16px;
-    font-weight: 600;
-    border-radius: 30px;
-    text-decoration: none;
-    transition: background-color 0.3s ease, transform 0.3s ease;
-    display: inline-block;
-  }
-  
-  .hero .button:hover {
-    background-color: #ff1f00;
-    transform: translateY(-3px); /* Slight hover effect */
-  }
-  
-  /* Responsive Design */
-  @media (max-width: 768px) {
-    .hero {
-      height: auto;
-      padding: 50px 20px;
-    }
-  
-    .hero h1 {
-      font-size: 36px; /* Smaller title on mobile */
-      letter-spacing: 1px;
-    }
-  
-    .hero p {
-      font-size: 18px;
-      margin-bottom: 20px;
-    }
-  
-    .hero .button {
-      padding: 10px 30px;
-      font-size: 14px;
-    }
-  } 
-  
+}

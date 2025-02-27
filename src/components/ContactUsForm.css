@@ -1,66 +1,66 @@
-
-
 .container {
-    display: flex;
-    justify-content: space-between;
-    max-width: 900px;
-    margin: 2rem auto;
-  }
-  
-  .form-container {
-    background: #1a1a1a;
-    padding: 2rem;
-    border-radius: 12px;
-    max-width: 400px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  }
-  
-  .form-input,
-  .form-textarea {
-    width: 100%;
-    padding: 0.75rem;
-    margin-bottom: 1rem;
-    border: 1px solid #ff5722;
-    border-radius: 8px;
-    font-size: 1rem;
-    color: #fff; 
-    background-color: #333; 
-  }
-  
-  .form-input:focus,
-  .form-textarea:focus {
-    border-color: #ff5722;
-    outline: none;
-  }
-  
-  .form-button {
-    background: #ff5722; 
-    color: #fff; 
-    padding: 0.75rem 1.5rem;
-    border: none;
-    border-radius: 8px;
-    font-size: 1rem;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-  }
-  
-  .form-button:hover {
-    background-color: #e64a19;
-  }
-  
-  .about-container {
-    max-width: 450px;
-    margin-left: 2rem;
-    color: #fff;
-  }
-  
-  .about-container h2 {
-    font-size: 1.5rem;
-    margin-bottom: 1rem;
-    color: #ff5722;
-  }
-  
-  .about-container p {
-    font-size: 1rem;
-    color: #ccc;
-  }
+  display: flex;
+  justify-content: space-between;
+  max-width: 700px;
+  margin: 2rem auto;
+}
+
+.form-container {
+  background: #d8d8d8; /* Light gray background */
+  padding: 2rem;
+  border-radius: 12px;
+  width: 100%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  padding-bottom: 15px;
+}
+
+.form-input,
+.form-textarea {
+  width: 100%;
+  padding: 0.75rem;
+  margin-bottom: 1rem;
+  border: 1px solid #3b82f6; /* Blue border */
+  border-radius: 8px;
+  font-size: 1rem;
+}
+
+.form-input:focus,
+.form-textarea:focus {
+  border-color: #3b82f6; /* Blue on focus */
+  outline: none;
+}
+
+.form-button {
+  background: #3b82f6; /* Blue background for button */
+  color: #fff;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.form-button:hover {
+  background-color: #1d4ed8; /* Darker blue on hover */
+}
+
+.about-container {
+  max-width: 450px;
+  margin-left: 2rem;
+  color: #fff;
+}
+
+.about-container h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: #3b82f6; /* Blue for section header */
+}
+
+.about-container p {
+  font-size: 1rem;
+  color: #ccc; /* Light gray text */
+}

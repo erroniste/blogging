@@ -1,6 +1,6 @@
 .footer {
-  background-color: #1a1a1a;
-  color: #f1f1f1;
+  background-color: #d8d8d8; /* Light gray background */
+  color: #333; /* Dark text color */
   padding: 40px 20px;
   display: flex;
   flex-direction: column;
@@ -24,11 +24,13 @@
 .footer-section h4 {
   margin-bottom: 15px;
   font-size: 18px;
+  color: #3b82f6; /* Blue color for section headers */
 }
 
 .footer-links {
-  list-style: none;
+  list-style: none; /* Remove default list styling */
   padding: 0;
+  margin: 0; /* Ensure no margin */
 }
 
 .footer-links li {
@@ -36,12 +38,13 @@
 }
 
 .footer-links a {
-  color: #f1f1f1;
-  text-decoration: none;
+  color: #333; /* Dark text for links */
+  text-decoration: none; /* Remove underline */
 }
 
 .footer-links a:hover {
-  text-decoration: underline;
+  text-decoration: underline; /* Underline on hover */
+  color: #3b82f6; /* Blue color on hover */
 }
 
 .social-media {
@@ -50,22 +53,24 @@
 }
 
 .social-media a {
-  color: #f1f1f1;
-  text-decoration: none;
+  color: #333; /* Dark color for social media links */
+  text-decoration: none; /* Remove underline */
 }
 
 .social-media a:hover {
-  color: #ff5722;
+  color: #3b82f6; /* Blue color on hover */
+}
+
+.footer-links {
+  list-style: none; /* Remove default list styling */
+  padding: 0;
+  text-decoration: none;
 }
 
 .social-media ul {
-  list-style-type: none;
+  list-style-type: none; /* Remove default list styling */
   padding: 0;
   margin: 0;
-}
-
-.social-media li {
-  margin: 5px 0;
 }
 
 .subscribe form {
@@ -75,13 +80,13 @@
 
 .subscribe input {
   padding: 10px;
-  border: none;
+  border: 1px solid #ccc; /* Light border for input */
   border-radius: 5px;
 }
 
 .subscribe button {
   padding: 10px;
-  background-color: #ff5722;
+  background-color: #3b82f6; /* Blue background for button */
   border: none;
   color: white;
   border-radius: 5px;
@@ -89,7 +94,7 @@
 }
 
 .subscribe button:hover {
-  background-color: #e64a19;
+  background-color: #1d4ed8; /* Darker blue on hover */
 }
 
 .footer-bottom {

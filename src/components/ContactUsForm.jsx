@@ -19,6 +19,7 @@ const ContactUsForm = () => {
     <div className="container">
       {/* Contact Form Section */}
       <form onSubmit={handleSubmit} className="form-container">
+        <h2>Contact Us</h2>
         <input
           type="text"
           name="name"
@@ -49,16 +50,6 @@ const ContactUsForm = () => {
           Send
         </button>
       </form>
-
-      {/* About Us Section */}
-      <div className="about-container">
-        <h2>About Us</h2>
-        <p>
-          We are a dedicated team focused on delivering excellent customer service. Our mission is to provide
-          top-notch solutions and ensure that our customers always feel heard and supported. Whether you're
-          reaching out for help, feedback, or inquiries, we're here to assist you every step of the way.
-        </p>
-      </div>
     </div>
   );
 };
